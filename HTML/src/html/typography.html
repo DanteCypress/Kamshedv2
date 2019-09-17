@@ -1,0 +1,243 @@
+@@include('template/document_start.html')
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--light" data-nav-anchor="false">
+				<div class="top-bar__inner">
+					<div class="container-fluid">
+						<div class="row align-items-center no-gutters">
+
+							<a class="top-bar__logo site-logo" href="index.html">
+								<img class="img-fluid" src="img/site_logo/logo_1.png" width="159" height="45" alt="demo" />
+							</a>
+
+							<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler" href="javascript:void(0);">
+								<span></span>
+							</a>
+
+							<div class="top-bar__collapse">
+								<nav id="top-bar__navigation" class="top-bar__navigation" role="navigation">
+									<ul>
+										<li>
+											<a class="nav-link" href="index.html#start-screen">Home</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#services">Services</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#pricing">Pricing</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#features">Features</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#team">Team</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#testimonials">Testimonials</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="index.html#blog">Blog</a>
+										</li>
+
+										<li class="has-submenu">
+											<a class="nav-link active" href="javascript:void(0);">Pages</a>
+
+											<ul class="submenu">
+												<li class="has-submenu">
+													<a href="javascript:void(0)">UI Kit</a>
+
+													<ul class="submenu">
+														<li><a href="headers.html">Headers</a></li>
+														<li><a href="footers.html">Footers</a></li>
+														<li><a href="about_us.html">About</a></li>
+														<li><a href="blogs.html">Blogs</a></li>
+														<li><a href="services.html">Services</a></li>
+														<li><a href="video.html">Video</a></li>
+														<li><a href="features.html">Features</a></li>
+														<li><a href="projects.html">Projects</a></li>
+														<li><a href="pricing_tables.html">Pricing Tables</a></li>
+														<li><a href="how_it_works.html">How it Works</a></li>
+														<li><a href="infoblock.html">Info Block</a></li>
+														<li><a href="testimonials.html">Teatimonials</a></li>
+														<li><a href="team.html">Team</a></li>
+														<li><a href="faq.html">FAQ</a></li>
+														<li><a href="subscribe.html">Subscribe</a></li>
+														<li><a href="get_in_touch.html">Get in Touch</a></li>
+													</ul>
+												</li>
+												<li><a href="blog.html">Blog</a></li>
+												<li><a href="blog_details.html">Blog Details</a></li>
+												<li><a href="sign_in.html">Sign In</a></li>
+												<li><a href="sign_up.html">Sign Up</a></li>
+												<li><a class="active" href="typography.html">Typography</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+								<div id="top-bar__action" class="top-bar__action">
+									<div class="d-xl-flex flex-xl-row flex-xl-wrap align-items-xl-center">
+										<div class="top-bar__choose-lang js-choose-lang">
+											<div class="current-lang">
+												<i><img class="circled" width="25" height="25" src="img/ico/flag/1.png" alt="demo" /></i>
+												<span>En</span>
+											</div>
+
+											<div class="list-wrap">
+												<ul class="list">
+													<li data-short-name="En" data-img="img/ico/flag/1.png" class="is-active"><span>English</span></li>
+													<li data-short-name="Ru" data-img="img/ico/flag/2.png"><span>Russian</span></li>
+													<li data-short-name="Ge" data-img="img/ico/flag/3.png"><span>German</span></li>
+													<li data-short-name="Sp" data-img="img/ico/flag/4.png"><span>Spanish</span></li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="top-bar__auth-btns">
+											<a href="sign_in.html">Sign In</a>
+
+											<a class="custom-btn custom-btn--medium custom-btn--style-5" href="index.html#get_in_touch">Get in Touch</a>
+										</div>
+
+										<div class="top-bar__side-menu-button js-side-menu-open">
+											<span class="line"></span>
+											<span class="line"></span>
+											<span class="line"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- start side menu -->
+			@@include('template/side_menu.html')
+			<!-- end side menu -->
+
+			<!-- start hero -->
+			<div id="hero" class="hero jarallax" data-speed="0.7" data-img-position="50% 90%" style="background-image: url(img/hero_img/1.jpg);">
+				<div class="container">
+					<h1 class="hero__title"><span>Typography</span></h1>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				@@include('template/LazyLoad_scripts.html')
+
+				<!-- start section -->
+				<section class="section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<div class="content-container">
+									<h1>Heading 1 <span>70px</span></h1>
+									<h2>Heading 2 <span>40px</span></h2>
+									<h3>Heading 3 <span>30px</span></h3>
+									<h4>Heading 4 <span>20px</span></h4>
+									<h5>Heading 5 <span>16px</span></h5>
+									<h6>Heading 6 <span>13px</span></h6>
+
+									<hr>
+
+									<h4>Paragraphs</h4>
+
+									<p>
+										<strong>Earthworm eel sole ropefish armorhead sole Black scabbardfish. Codling goldfish golden dojo combtail gourami tench deep sea anglerfish, plownose chimaera. Jackson shark! Yellow-eye mullet worm eel catalufa weever, damselfish, worm eel pricklefish dorado</strong>
+									</p>
+
+									<p>
+										Redfin <span class="demo-selection">perch tripod fish zebra lionfish</span>, nase slickhead! Jewelfish angler Devario gray reef shark forehead brooder. Pike Redfin perch tripod fish zebra lionfish, nase slickhead! Jewelfish angler <a href="#">Devario gray reef shark forehead brooder</a>.
+									</p>
+
+									<p>
+										<em>False cat shark, sand dab Siamese fighting fish. African glass catfish inconnu Celebes rainbowfish North American freshwater catfish drum algae eater murray cod thorny catfish knifejaw prickly shark. Icefish; Atlantic trout whitefish deep sea anglerfish threadfin eeltail catfish riffle dace pikeblenny Moses sole: cobia spikefish sucker viperfish, alligatorfish tapetail mudskipper, yellowfin surgeonfish? Earthworm eel sole ropefish armorhead sole Black scabbardfish. Codling goldfish golden dojo combtail gourami tench deep sea anglerfish, plownose chimaera.</em>
+									</p>
+
+									<hr>
+
+									<h4>Dropcaps</h4>
+
+									<p class="dropcaps">
+										<span class="first-letter">L</span> We believe in helping brands create through strategy, and integrated experiences on web, mobile, and in the world. And you're here, friends, because you also believe.Our team has a passion for making things with real value. This has led us to assemble a multi-talented group that can do just about anything: from building sets to photographing food, crafting websites to developing apps, beautiful design to adventure cinematography. Designers, engineers, creatives, makers, developers, artists, unite. Let’s do something real-special together.
+									</p>
+
+									<hr>
+
+									<h4>Standard Listings</h4>
+
+									<div class="row">
+										<div class="col-12 col-md-6 col-lg-4">
+											<div class="">
+												<ul>
+													<li>Minnow arrowtooth</li>
+													<li>Southern sandfish</li>
+													<li>Black triplefin guitarfish</li>
+													<li>Nase slickhead</li>
+													<li>Reef shark <a href="#">forehead brooder</a></li>
+													<li>Minnow arrowtooth</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="spacer py-3 d-md-none"></div>
+
+										<div class="col-12 col-md-6 col-lg-4">
+											<div class="">
+												<ol>
+													<li>Minnow arrowtooth</li>
+													<li>Southern sandfish</li>
+													<li>Black triplefin guitarfish</li>
+													<li>Nase slickhead</li>
+													<li>Reef shark <a href="#">forehead brooder</a></li>
+													<li>Minnow arrowtooth</li>
+												</ol>
+											</div>
+										</div>
+									</div>
+
+									<hr>
+
+									<h4>Blockquotes</h4>
+
+									<blockquote class="blockquot">
+										<p>
+											<strong>This has led us to assemble a multi-talented group that can do just about anything: from building sets to photographing food, crafting websites to developing apps, beautiful design to adventure cinematography. Designers, engineers, creatives,</strong>
+										</p>
+									</blockquote>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+
+			<!-- start footer -->
+			@@include('template/footer_1.html')
+			<!-- end footer -->
+		</div>
+
+@@include('template/document_end.html')
